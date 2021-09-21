@@ -33,7 +33,7 @@ public class Garage {
             }
         }
     }
-    
+
     public void removeVehiclesByTypes(String type){
         for (Vehicle v : garage){
             if(v.getType() == type){
@@ -57,7 +57,7 @@ public class Garage {
         if(type == "Van"){
             bill += 1000;
         } else if(type == "Truck"){
-            bill += 2000;
+            bill += 5000;
         }
         if (engineSize >= 1.5){
             bill += 500;

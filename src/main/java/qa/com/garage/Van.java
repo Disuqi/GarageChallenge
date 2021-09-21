@@ -4,7 +4,7 @@ public class Van extends Vehicle {
     private String typeOfVan;
     private int maxWeight;
 
-    public Van(float engineSize, int horsePower, String colour, String typeOfCar, String brand, int seats, int doors, String typeOfVan, int maxWeight){
+    public Van(float engineSize, int horsePower, String colour, String brand, String typeOfVan, int maxWeight){
         super(engineSize, horsePower, colour, brand);
         this.typeOfVan = typeOfVan;
         this.maxWeight = maxWeight;
