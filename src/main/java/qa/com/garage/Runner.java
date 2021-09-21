@@ -11,5 +11,7 @@ public class Runner {
         garage.addVehicle(van);
         garage.addVehicle(truck);
         System.out.println(garage.calculateBillForAll());
+        garage.removeVehiclebyId(1);
+        System.out.println(garage.getAllVehicles());
     }
 }

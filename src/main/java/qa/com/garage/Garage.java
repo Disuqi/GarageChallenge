@@ -76,4 +76,15 @@ public class Garage {
     public void emptyGarage(){
         garage.clear();
     }
+
+    public ArrayList<Vehicle> getGarage(){
+        return garage;
+    }
+    public String getAllVehicles(){
+        String result = "";
+        for (Vehicle v : garage){
+            result += "ID:" + v.getId() + " Type: "+ v.getType() + "\n";
+        }
+        return result;
+    }
 }
