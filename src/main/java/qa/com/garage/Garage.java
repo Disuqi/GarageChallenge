@@ -35,10 +35,14 @@ public class Garage {
     }
 
     public void removeVehiclesByTypes(String type){
+        ArrayList<Vehicle> toRemove = new ArrayList<>();
         for (Vehicle v : garage){
-            if(v.getType() == type){
-                garage.remove(v);
+            if(v.getType().equals(type.toLowerCase())){
+                toRemove.add(v);
             }
+        }
+        for (Vehicle v : toRemove){
+            garage.remove(v);
         }
     }
     public String calculateBillForAll(){

@@ -5,7 +5,7 @@ public class Van extends Vehicle {
     private int maxWeight;
 
     public Van(float engineSize, int horsePower, String colour, String brand, String typeOfVan, int maxWeight){
-        super(engineSize, horsePower, colour, brand);
+        super(engineSize, horsePower, colour, brand, "van");
         this.typeOfVan = typeOfVan;
         this.maxWeight = maxWeight;
     }
@@ -24,9 +24,5 @@ public class Van extends Vehicle {
 
     public void setMaxWeight(int maxWeight){
         this.maxWeight = maxWeight;
-    }
-    @Override
-    public String getType(){
-        return "Van";
     }
 }

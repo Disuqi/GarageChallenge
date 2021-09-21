@@ -5,14 +5,16 @@ package qa.com.garage;
  */
 public abstract class Vehicle {
     private int id;
+    public String type;
     private float engineSize;
     private int horsePower;
     private String colour;
     private String brand;
     private static int inc = 0;
 
-    public Vehicle(float engineSize, int horsePower, String colour, String brand){
+    public Vehicle(float engineSize, int horsePower, String colour, String brand, String type){
         this.id = inc;
+        this.type = type;
         this.engineSize = engineSize;
         this.horsePower = horsePower;
         this.colour = colour;
@@ -45,7 +47,7 @@ public abstract class Vehicle {
         this.brand = brand;
     }
     public String getType(){
-        return "Vehicle";
+        return type;
     }
     public int getId(){
         return id;

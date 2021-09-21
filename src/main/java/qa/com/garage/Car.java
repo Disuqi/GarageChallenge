@@ -6,7 +6,7 @@ public class Car extends Vehicle {
     private int doors;
 
     public Car(float engineSize, int horsePower, String colour, String typeOfCar, String brand, int seats, int doors){
-        super(engineSize, horsePower, colour, brand);
+        super(engineSize, horsePower, colour, brand, "car");
         this.typeOfCar = typeOfCar;
         this.seats = seats;
         this.doors = doors;
@@ -36,9 +36,5 @@ public class Car extends Vehicle {
         this.doors = doors;
     }
 
-    @Override
-    public String getType(){
-        return "Car";
-    }
 }
 
